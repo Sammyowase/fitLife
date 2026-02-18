@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing (8dp grid system) -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="spacing_xxl">48dp</dimen>
+    
+    <!-- Cards -->
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_elevation_pressed">8dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    
+    <!-- Buttons -->
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="button_corner_radius">8dp</dimen>
+    <dimen name="button_elevation">2dp</dimen>
+    <dimen name="button_padding_horizontal">24dp</dimen>
+    
+    <!-- Images -->
+    <dimen name="workout_image_size">80dp</dimen>
+    <dimen name="workout_image_radius">8dp</dimen>
+    <dimen name="hero_image_height">200dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="icon_size_small">18dp</dimen>
+    <dimen name="icon_size_large">32dp</dimen>
+    
+    <!-- Touch Targets -->
+    <dimen name="min_touch_target">48dp</dimen>
+    
+    <!-- FAB -->
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    
+    <!-- Elevation -->
+    <dimen name="elevation_none">0dp</dimen>
+    <dimen name="elevation_low">2dp</dimen>
+    <dimen name="elevation_medium">4dp</dimen>
+    <dimen name="elevation_high">8dp</dimen>
+    <dimen name="elevation_fab">6dp</dimen>
+    
+    <!-- Text Sizes -->
+    <dimen name="text_size_headline1">32sp</dimen>
+    <dimen name="text_size_headline2">24sp</dimen>
+    <dimen name="text_size_body1">16sp</dimen>
+    <dimen name="text_size_body2">14sp</dimen>
+    <dimen name="text_size_button">14sp</dimen>
+    <dimen name="text_size_caption">12sp</dimen>
+    
+    <!-- Screen Padding -->
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="screen_padding_large">24dp</dimen>
+</resources>

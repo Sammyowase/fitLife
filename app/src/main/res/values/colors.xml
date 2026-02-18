@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors -->
+    <color name="primary">#6C63FF</color>
+    <color name="primary_variant">#5548E0</color>
+    <color name="primary_light">#9D97FF</color>
+    
+    <!-- Secondary Colors -->
+    <color name="secondary">#00D9A3</color>
+    <color name="secondary_variant">#00B386</color>
+    <color name="secondary_light">#33E3B8</color>
+    
+    <!-- Background & Surface Colors -->
+    <color name="background">#F8F9FA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F1F3F5</color>
+    <color name="surface_elevated">#FFFFFF</color>
+    
+    <!-- Semantic Colors -->
+    <color name="error">#FF5252</color>
+    <color name="success">#00D9A3</color>
+    <color name="warning">#FFA726</color>
+    <color name="info">#42A5F5</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#212529</color>
+    <color name="text_secondary">#6C757D</color>
+    <color name="text_disabled">#ADB5BD</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    
+    <!-- Gesture Feedback Colors -->
+    <color name="gesture_complete">#4CAF50</color>
+    <color name="gesture_delete">#F44336</color>
+    <color name="gesture_edit">#2196F3</color>
+    <color name="gesture_background">#E0E0E0</color>
+    
+    <!-- Standard Material Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>

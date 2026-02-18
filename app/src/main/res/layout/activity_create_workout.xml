@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Toolbar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.FitLife.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@android:drawable/ic_menu_close_clear_cancel"
+            app:title="@string/create_workout" />
+
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_lg"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <!-- Workout Image -->
+            <ImageView
+                android:id="@+id/iv_workout_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_rounded_card"
+                android:contentDescription="@string/cd_workout_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_placeholder" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_select_image"
+                style="@style/Widget.FitLife.Button.Outlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_sm"
+                android:text="@string/select_image"
+                app:icon="@android:drawable/ic_menu_camera" />
+
+            <!-- Workout Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_workout_name"
+                style="@style/Widget.FitLife.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:hint="@string/workout_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_workout_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Workout Description -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_workout_description"
+                style="@style/Widget.FitLife.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:hint="@string/workout_description">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_workout_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:lines="3"
+                    android:maxLength="500" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Exercises Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_lg"
+                android:text="@string/exercises"
+                android:textAppearance="@style/TextAppearance.FitLife.Headline2" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_exercises"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:nestedScrollingEnabled="false" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_add_exercise"
+                style="@style/Widget.FitLife.Button.Outlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:text="@string/add_exercise"
+                app:icon="@android:drawable/ic_input_add" />
+
+            <!-- Save Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save_workout"
+                style="@style/Widget.FitLife.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_lg"
+                android:layout_marginBottom="@dimen/spacing_lg"
+                android:text="@string/save_workout" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

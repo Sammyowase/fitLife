@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.FitLife.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_sm">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_md">
+
+        <!-- Checkbox for completion -->
+        <CheckBox
+            android:id="@+id/cb_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Exercise Name -->
+        <TextView
+            android:id="@+id/tv_exercise_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_md"
+            android:layout_marginEnd="@dimen/spacing_md"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/exercise_name"
+            android:textAppearance="@style/TextAppearance.FitLife.Body1"
+            app:layout_constraintEnd_toStartOf="@id/iv_more"
+            app:layout_constraintStart_toEndOf="@id/cb_completed"
+            app:layout_constraintTop_toTopOf="@id/cb_completed" />
+
+        <!-- Sets and Reps -->
+        <TextView
+            android:id="@+id/tv_sets_reps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_md"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:layout_marginEnd="@dimen/spacing_md"
+            android:text="@string/sets_reps"
+            android:textAppearance="@style/TextAppearance.FitLife.Body2"
+            android:textColor="@color/text_secondary"
+            app:layout_constraintEnd_toStartOf="@id/iv_more"
+            app:layout_constraintStart_toEndOf="@id/cb_completed"
+            app:layout_constraintTop_toBottomOf="@id/tv_exercise_name" />
+
+        <!-- Equipment (if any) -->
+        <TextView
+            android:id="@+id/tv_equipment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_md"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:layout_marginEnd="@dimen/spacing_md"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/equipment"
+            android:textAppearance="@style/TextAppearance.FitLife.Caption"
+            android:textColor="@color/secondary"
+            app:layout_constraintEnd_toStartOf="@id/iv_more"
+            app:layout_constraintStart_toEndOf="@id/cb_completed"
+            app:layout_constraintTop_toBottomOf="@id/tv_sets_reps" />
+
+        <!-- More Options Icon -->
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/cd_more_options"
+            android:src="@android:drawable/ic_menu_more"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/text_secondary" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">FitLife</string>
+    <string name="app_tagline">Plan. Track. Achieve.</string>
+    
+    <!-- Authentication -->
+    <string name="welcome_title">Welcome to FitLife</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="logout">Logout</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="dont_have_account">Don\'t have an account? Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    
+    <!-- Form Fields -->
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="workout_name">Workout Name</string>
+    <string name="description">Description</string>
+    <string name="exercise_name">Exercise Name</string>
+    <string name="sets">Sets</string>
+    <string name="reps">Reps</string>
+    <string name="equipment">Equipment</string>
+    <string name="instructions">Instructions</string>
+    
+    <!-- Hints -->
+    <string name="hint_full_name">Enter your full name</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="hint_confirm_password">Re-enter your password</string>
+    <string name="hint_workout_name">e.g., Full Body Strength</string>
+    <string name="hint_description">Describe your workout routine</string>
+    <string name="hint_exercise_name">e.g., Push-ups</string>
+    <string name="hint_equipment">e.g., Dumbbells, Mat</string>
+    <string name="hint_instructions">How to perform this exercise</string>
+    
+    <!-- Buttons -->
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="share">Share</string>
+    <string name="add">Add</string>
+    <string name="add_exercise">Add Exercise</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="create_workout">Create Workout</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="choose_contact">Choose Contact</string>
+    <string name="select_image">Select Image</string>
+    <string name="save_workout">Save Workout</string>
+    <string name="change_image">Change Image</string>
+    <string name="update_workout">Update Workout</string>
+
+    <!-- Home Screen -->
+    <string name="hi_user">Hi, %1$s!</string>
+    <string name="my_workouts">My Workouts</string>
+    <string name="total_workouts">Total Workouts</string>
+    <string name="completed_this_week">Completed This Week</string>
+    <string name="equipment_items">Equipment Items</string>
+    
+    <!-- Workout Details -->
+    <string name="exercises">Exercises</string>
+    <string name="equipment_needed">Equipment Needed</string>
+    <string name="mark_complete">Mark Complete</string>
+    <string name="completed">Completed</string>
+    <string name="exercises_count">%1$d exercises</string>
+    <string name="completion_status">Completion Status</string>
+    <string name="in_progress">In Progress</string>
+
+    <!-- Empty States -->
+    <string name="no_workouts">No workouts yet</string>
+    <string name="no_workouts_message">Create your first workout to get started!</string>
+    <string name="no_exercises">No exercises added</string>
+    <string name="no_exercises_message">Add exercises to this workout</string>
+    
+    <!-- Validation Messages -->
+    <string name="error_empty_field">This field cannot be empty</string>
+    <string name="error_invalid_email">Please enter a valid email</string>
+    <string name="error_password_length">Password must be at least 6 characters</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_email_exists">Email already registered</string>
+    <string name="error_invalid_credentials">Invalid email or password</string>
+    <string name="error_min_one_exercise">Add at least one exercise</string>
+    
+    <!-- Success Messages -->
+    <string name="success_registration">Account created successfully!</string>
+    <string name="success_login">Welcome back!</string>
+    <string name="success_workout_created">Workout created successfully!</string>
+    <string name="success_workout_updated">Workout updated successfully!</string>
+    <string name="success_workout_deleted">Workout deleted</string>
+    <string name="success_marked_complete">Marked as complete!</string>
+    <string name="success_sms_sent">SMS sent successfully!</string>
+    
+    <!-- Confirmation Dialogs -->
+    <string name="confirm_delete_title">Delete Workout?</string>
+    <string name="confirm_delete_message">This action cannot be undone.</string>
+    <string name="confirm_logout_title">Logout?</string>
+    <string name="confirm_logout_message">Are you sure you want to logout?</string>
+    <string name="confirm_reset_title">Reset All Workouts?</string>
+    <string name="confirm_reset_message">This will mark all exercises as incomplete.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="reset">Reset</string>
+    
+    <!-- SMS Template -->
+    <string name="sms_template">FitLife Workout: %1$s\n\nEquipment Needed:\n%2$s\n\nExercises:\n%3$s\n\nLet\'s train together!</string>
+    
+    <!-- Permissions -->
+    <string name="permission_sms_rationale">SMS permission is needed to share workouts with contacts</string>
+    <string name="permission_contacts_rationale">Contacts permission is needed to select recipients</string>
+    <string name="permission_camera_rationale">Camera permission is needed to take workout photos</string>
+    <string name="permission_storage_rationale">Storage permission is needed to select workout photos</string>
+    
+    <!-- Content Descriptions (Accessibility) -->
+    <string name="cd_app_logo">FitLife App Logo</string>
+    <string name="cd_workout_image">Workout Image</string>
+    <string name="cd_profile_icon">Profile</string>
+    <string name="cd_add_workout">Add New Workout</string>
+    <string name="cd_menu">Menu</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_delete_icon">Delete</string>
+    <string name="cd_edit_icon">Edit</string>
+    <string name="cd_complete_icon">Mark Complete</string>
+    <string name="cd_more_options">More options</string>
+
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="user_name">User Name</string>
+    <string name="statistics">Statistics</string>
+    <string name="account">Account</string>
+    <string name="member_since">Member Since</string>
+    <string name="date_placeholder">Date Placeholder</string>
+    <string name="workout_description">Workout Description</string>
+    <string name="edit_workout">Edit Workout</string>
+
+    <!-- Missing Strings Fixed -->
+    <string name="workout_details">Workout Details</string>
+    <string name="no_equipment">No equipment needed</string>
+    <string name="sets_reps">Sets: %1$d • Reps: %2$d</string>
+    <string name="no_workouts_title">No Workouts</string>
+
+    <string name="error_description_too_long">Description is too long</string>
+    <string name="error_invalid_number">Invalid number</string>
+    <string name="close">Close</string>
+    <string name="view_details">View Details</string>
+    <string name="confirm_delete_workout">Are you sure you want to delete this workout?</string>
+    <string name="delete_workout">Delete Workout</string>
+    <string name="workout_deleted">Workout deleted</string>
+    <string name="edit_exercise">Edit Exercise</string>
+
+</resources>

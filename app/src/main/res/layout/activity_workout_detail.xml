@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Toolbar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.FitLife.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/menu_home"
+            app:navigationIcon="@android:drawable/ic_menu_close_clear_cancel"
+            app:title="@string/workout_details" />
+
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <!-- Workout Image -->
+            <ImageView
+                android:id="@+id/iv_workout_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:contentDescription="@string/cd_workout_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_fitness_center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_lg">
+
+                <!-- Workout Name -->
+                <TextView
+                    android:id="@+id/tv_workout_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/workout_name"
+                    android:textAppearance="@style/TextAppearance.FitLife.Headline1" />
+
+                <!-- Workout Description -->
+                <TextView
+                    android:id="@+id/tv_workout_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:text="@string/workout_description"
+                    android:textAppearance="@style/TextAppearance.FitLife.Body1"
+                    android:textColor="@color/text_secondary" />
+
+                <!-- Action Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_md"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_share"
+                        style="@style/Widget.FitLife.Button.Outlined"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/spacing_sm"
+                        android:layout_weight="1"
+                        android:text="@string/share"
+                        app:icon="@android:drawable/ic_menu_share" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_edit"
+                        style="@style/Widget.FitLife.Button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/spacing_sm"
+                        android:layout_weight="1"
+                        android:text="@string/edit"
+                        app:icon="@android:drawable/ic_menu_edit" />
+
+                </LinearLayout>
+
+                <!-- Exercises Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_lg"
+                    android:text="@string/exercises"
+                    android:textAppearance="@style/TextAppearance.FitLife.Headline2" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_exercises"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_md"
+                    android:nestedScrollingEnabled="false" />
+
+                <!-- Equipment Checklist Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_lg"
+                    android:text="@string/equipment_needed"
+                    android:textAppearance="@style/TextAppearance.FitLife.Headline2" />
+
+                <TextView
+                    android:id="@+id/tv_equipment_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:text="@string/no_equipment"
+                    android:textAppearance="@style/TextAppearance.FitLife.Body2"
+                    android:textColor="@color/text_secondary" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

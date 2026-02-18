@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.FitLife.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_md"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_md">
+
+        <!-- Workout Image -->
+        <ImageView
+            android:id="@+id/iv_workout_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/cd_workout_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_placeholder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Workout Name -->
+        <TextView
+            android:id="@+id/tv_workout_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_md"
+            android:layout_marginEnd="@dimen/spacing_md"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/workout_name"
+            android:textAppearance="@style/TextAppearance.FitLife.Headline2"
+            app:layout_constraintEnd_toStartOf="@id/iv_more"
+            app:layout_constraintStart_toEndOf="@id/iv_workout_image"
+            app:layout_constraintTop_toTopOf="@id/iv_workout_image" />
+
+        <!-- Exercise Count -->
+        <TextView
+            android:id="@+id/tv_exercise_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_md"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:layout_marginEnd="@dimen/spacing_md"
+            android:text="@string/exercises_count"
+            android:textAppearance="@style/TextAppearance.FitLife.Body2"
+            android:textColor="@color/text_secondary"
+            app:layout_constraintEnd_toStartOf="@id/iv_more"
+            app:layout_constraintStart_toEndOf="@id/iv_workout_image"
+            app:layout_constraintTop_toBottomOf="@id/tv_workout_name" />
+
+        <!-- Completion Status -->
+        <TextView
+            android:id="@+id/tv_completion_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_md"
+            android:layout_marginTop="@dimen/spacing_xs"
+            android:layout_marginEnd="@dimen/spacing_md"
+            android:text="@string/completion_status"
+            android:textAppearance="@style/TextAppearance.FitLife.Caption"
+            android:textColor="@color/primary"
+            app:layout_constraintEnd_toStartOf="@id/iv_more"
+            app:layout_constraintStart_toEndOf="@id/iv_workout_image"
+            app:layout_constraintTop_toBottomOf="@id/tv_exercise_count" />
+
+        <!-- More Options Icon -->
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/cd_more_options"
+            android:src="@android:drawable/ic_menu_more"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/text_secondary" />
+
+        <!-- Completion Indicator -->
+        <View
+            android:id="@+id/view_completion_indicator"
+            android:layout_width="4dp"
+            android:layout_height="0dp"
+            android:background="@color/success"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

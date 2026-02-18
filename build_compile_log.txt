@@ -1,0 +1,217 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac
+warning: [options] source value 8 is obsolete and will be removed in a future release
+warning: [options] target value 8 is obsolete and will be removed in a future release
+warning: [options] To suppress warnings about obsolete options, use -Xlint:-options.
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\CreateWorkoutActivity.java:162: error: cannot find symbol
+        startActivityForResult(intent, Constants.REQUEST_IMAGE_PICK);
+                                                ^
+  symbol:   variable REQUEST_IMAGE_PICK
+  location: class Constants
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\CreateWorkoutActivity.java:210: error: cannot find symbol
+            tilWorkoutDescription.setError(getString(R.string.error_description_too_long));
+                                                             ^
+  symbol:   variable error_description_too_long
+  location: class string
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\CreateWorkoutActivity.java:230: error: constructor Workout in class Workout cannot be applied to given types;
+            Workout workout = new Workout(userId, workoutName, workoutDescription);
+                              ^
+  required: int,String,String,String
+  found:    int,String,String
+  reason: actual and formal argument lists differ in length
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\CreateWorkoutActivity.java:247: error: cannot find symbol
+                exerciseDao.insertBack(exerciseList);
+                           ^
+  symbol:   method insertBack(List<Exercise>)
+  location: variable exerciseDao of type ExerciseDao
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\CreateWorkoutActivity.java:263: error: cannot find symbol
+        if (requestCode == Constants.REQUEST_IMAGE_PICK && resultCode == RESULT_OK && data != null) {
+                                    ^
+  symbol:   variable REQUEST_IMAGE_PICK
+  location: class Constants
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\EditWorkoutActivity.java:204: error: cannot find symbol
+        startActivityForResult(intent, Constants.REQUEST_IMAGE_PICK);
+                                                ^
+  symbol:   variable REQUEST_IMAGE_PICK
+  location: class Constants
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\EditWorkoutActivity.java:255: error: cannot find symbol
+            tilWorkoutDescription.setError(getString(R.string.error_description_too_long));
+                                                             ^
+  symbol:   variable error_description_too_long
+  location: class string
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\EditWorkoutActivity.java:283: error: incompatible types: List<Exercise> cannot be converted to Exercise
+                exerciseDao.delete(exercisesToDelete);
+                                   ^
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\EditWorkoutActivity.java:312: error: cannot find symbol
+        if (requestCode == Constants.REQUEST_IMAGE_PICK && resultCode == RESULT_OK && data != null) {
+                                    ^
+  symbol:   variable REQUEST_IMAGE_PICK
+  location: class Constants
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\HomeActivity.java:109: error: cannot find symbol
+        tvTotalWorkouts = findViewById(R.id.tv_total_workouts);
+                                           ^
+  symbol:   variable tv_total_workouts
+  location: class id
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\HomeActivity.java:110: error: cannot find symbol
+        tvCompletedWorkouts = findViewById(R.id.tv_completed_workouts);
+                                               ^
+  symbol:   variable tv_completed_workouts
+  location: class id
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\HomeActivity.java:111: error: cannot find symbol
+        tvEquipmentCount = findViewById(R.id.tv_equipment_count);
+                                            ^
+  symbol:   variable tv_equipment_count
+  location: class id
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\HomeActivity.java:205: error: cannot find symbol
+            .setNeutralButton(R.string.close, null)
+                                      ^
+  symbol:   variable close
+  location: class string
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\HomeActivity.java:202: error: cannot find symbol
+            .setPositiveButton(R.string.view_details, (dialog, which) -> {
+                                       ^
+  symbol:   variable view_details
+  location: class string
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\HomeActivity.java:213: error: <anonymous com.fitlife.app.activities.HomeActivity$2> is not abstract and does not override abstract method onDoubleTap(int) in OnGesturePerformedListener
+        SwipeGestureCallback swipeCallback = new SwipeGestureCallback(this, new OnGesturePerformedListener() {
+                                                                                                             ^
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\HomeActivity.java:213: error: SwipeGestureCallback is abstract; cannot be instantiated
+        SwipeGestureCallback swipeCallback = new SwipeGestureCallback(this, new OnGesturePerformedListener() {
+                                             ^
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\HomeActivity.java:362: error: cannot find symbol
+        SMSHelper.openContactPicker(this, Constants.REQUEST_CONTACT_PICK);
+                                                   ^
+  symbol:   variable REQUEST_CONTACT_PICK
+  location: class Constants
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\HomeActivity.java:368: error: cannot find symbol
+            .setMessage(R.string.confirm_delete_workout)
+                                ^
+  symbol:   variable confirm_delete_workout
+  location: class string
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\HomeActivity.java:367: error: cannot find symbol
+            .setTitle(R.string.delete_workout)
+                              ^
+  symbol:   variable delete_workout
+  location: class string
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\HomeActivity.java:382: error: cannot find symbol
+                Toast.makeText(this, getString(R.string.workout_deleted), Toast.LENGTH_SHORT).show();
+                                                       ^
+  symbol:   variable workout_deleted
+  location: class string
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\HomeActivity.java:405: error: cannot find symbol
+        if (requestCode == Constants.REQUEST_CONTACT_PICK && resultCode == RESULT_OK && data != null) {
+                                    ^
+  symbol:   variable REQUEST_CONTACT_PICK
+  location: class Constants
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\HomeActivity.java:434: error: cannot find symbol
+                new String[]{android.Manifest.permission.SEND_SMS}, Constants.REQUEST_SMS_PERMISSION);
+                                                                             ^
+  symbol:   variable REQUEST_SMS_PERMISSION
+  location: class Constants
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\HomeActivity.java:463: error: cannot find symbol
+        if (requestCode == Constants.REQUEST_SMS_PERMISSION) {
+                                    ^
+  symbol:   variable REQUEST_SMS_PERMISSION
+  location: class Constants
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\WorkoutDetailActivity.java:233: error: cannot find symbol
+        SMSHelper.openContactPicker(this, Constants.REQUEST_CONTACT_PICK);
+                                                   ^
+  symbol:   variable REQUEST_CONTACT_PICK
+  location: class Constants
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\WorkoutDetailActivity.java:254: error: cannot find symbol
+        if (requestCode == Constants.REQUEST_CONTACT_PICK && resultCode == RESULT_OK && data != null) {
+                                    ^
+  symbol:   variable REQUEST_CONTACT_PICK
+  location: class Constants
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\WorkoutDetailActivity.java:281: error: cannot find symbol
+                new String[]{android.Manifest.permission.SEND_SMS}, Constants.REQUEST_SMS_PERMISSION);
+                                                                             ^
+  symbol:   variable REQUEST_SMS_PERMISSION
+  location: class Constants
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\activities\WorkoutDetailActivity.java:303: error: cannot find symbol
+        if (requestCode == Constants.REQUEST_SMS_PERMISSION) {
+                                    ^
+  symbol:   variable REQUEST_SMS_PERMISSION
+  location: class Constants
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\utils\ExerciseDialogHelper.java:70: error: cannot find symbol
+            .setTitle(existingExercise == null ? R.string.add_exercise : R.string.edit_exercise)
+                                                                                 ^
+  symbol:   variable edit_exercise
+  location: class string
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\utils\ExerciseDialogHelper.java:79: error: cannot find symbol
+        dialog.getButton(Dialog.BUTTON_POSITIVE).setOnClickListener(v -> {
+              ^
+  symbol:   method getButton(int)
+  location: variable dialog of type Dialog
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\utils\ExerciseDialogHelper.java:96: error: cannot find symbol
+            if (!ValidationHelper.isValidSetsReps(setsStr)) {
+                                 ^
+  symbol:   method isValidSetsReps(String)
+  location: class ValidationHelper
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\utils\ExerciseDialogHelper.java:97: error: cannot find symbol
+                tilSets.setError(context.getString(R.string.error_invalid_number));
+                                                           ^
+  symbol:   variable error_invalid_number
+  location: class string
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\utils\ExerciseDialogHelper.java:101: error: cannot find symbol
+            if (!ValidationHelper.isValidSetsReps(repsStr)) {
+                                 ^
+  symbol:   method isValidSetsReps(String)
+  location: class ValidationHelper
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\utils\ExerciseDialogHelper.java:102: error: cannot find symbol
+                tilReps.setError(context.getString(R.string.error_invalid_number));
+                                                           ^
+  symbol:   variable error_invalid_number
+  location: class string
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\utils\ExerciseDialogHelper.java:118: error: constructor Exercise in class Exercise cannot be applied to given types;
+                exercise = new Exercise(workoutId, exerciseName, sets, reps);
+                           ^
+  required: int,String,int,int,String,int
+  found:    int,String,int,int
+  reason: actual and formal argument lists differ in length
+C:\Users\USER\Desktop\gig_assignment\app\src\main\java\com\fitlife\app\utils\SMSHelper.java:79: error: cannot find symbol
+                    (ArrayList<String>) parts, null, null);
+                     ^
+  symbol:   class ArrayList
+  location: class SMSHelper
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+35 errors
+3 warnings
+
+> Task :app:compileDebugJavaWithJavac FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 11s
+17 actionable tasks: 2 executed, 15 up-to-date
