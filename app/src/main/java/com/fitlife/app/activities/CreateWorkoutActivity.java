@@ -48,7 +48,7 @@ public class CreateWorkoutActivity extends AppCompatActivity {
     private RecyclerView rvExercises;
     private MaterialButton btnAddExercise;
     private MaterialButton btnSaveWorkout;
-    
+
     private AppDatabase database;
     private WorkoutDao workoutDao;
     private ExerciseDao exerciseDao;
