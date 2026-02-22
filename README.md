@@ -1,3 +1,6 @@
+## Technical Report writing
+See `https://docs.google.com/document/d/1kVzUlgl08i4dkN6K63XpgTNBcj64lOUMW1OyKVbijbc/edit?usp=sharing`
+
 # FitLife Android App
 
 A comprehensive workout planning Android application built with Java and Material Design 3.
@@ -34,3 +37,5 @@ See `docs/project_structure.md` for complete project structure documentation.
 
 ## Assignment
 This project is part of CET343 Android Mobile Development assignment.
+
+
